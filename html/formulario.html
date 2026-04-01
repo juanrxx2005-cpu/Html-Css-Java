@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Inscripción</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+<h1>Formulario de Inscripción</h1>
+
+<form id="formulario">
+
+    <label>Tipo de Documento:</label>
+    <select id="tipo_documento" required>
+        <option value="">Seleccione</option>
+        <option value="cc">Cédula de Ciudadanía</option>
+        <option value="ti">Tarjeta de Identidad</option>
+        <option value="ce">Cédula de Extranjería</option>
+    </select>
+
+    <label>Número de Documento:</label>
+    <input type="text" id="documento">
+
+    <label>Nombres:</label>
+    <input type="text" id="nombres">
+
+    <label>Apellidos:</label>
+    <input type="text" id="apellidos">
+
+    <label>Dirección:</label>
+    <input type="text" id="direccion">
+
+    <label>Teléfono Fijo:</label>
+    <input type="tel" id="telefono_fijo">
+
+    <label>Teléfono Celular:</label>
+    <input type="tel" id="telefono_celular">
+
+    <label>Correo Electrónico:</label>
+    <input type="email" id="correo">
+
+    <label>Usuario:</label>
+    <input type="text" id="usuario">
+
+    <label>Password:</label>
+    <input type="password" id="password">
+
+    <label>Fecha de Inscripción:</label>
+    <input type="date" id="fecha">
+
+    <label>Hobbies:</label>
+    <div class="checkbox-group">
+        <input type="checkbox" value="Deporte"> Deporte<br>
+        <input type="checkbox" value="Música"> Música<br>
+        <input type="checkbox" value="Lectura"> Lectura<br>
+        <input type="checkbox" value="Viajar"> Viajar
+    </div>
+
+    <label>Comentarios:</label>
+    <textarea id="comentarios"></textarea>
+
+    <div class="botones">
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpiar">
+    </div>
+
+</form>
+
+<script src="script.js"></script>
+
+</body>
+</html>
